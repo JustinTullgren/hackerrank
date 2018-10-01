@@ -26,6 +26,3 @@ subprojects {
     version = "1.0"
 }
 
-configure(subprojects) {
-    apply(plugin = "kotlin")
-}
