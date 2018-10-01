@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":arrays:main" external.linked.project.path="$MODULE_DIR$/../../../arrays" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="hackerrank" external.system.module.type="sourceSet" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" useProjectSettings="false">
+        <compilerSettings />
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../arrays/build/classes/kotlin/main" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="arrays" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
+          <option name="languageVersion" value="1.2" />
+          <option name="apiVersion" value="1.2" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.2.71/da644c001c36f531dcf34bb9fe37ce08b9c9949f/kotlin-scripting-compiler-embeddable-1.2.71.jar" />
+            </array>
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_10">
+    <output url="file://$MODULE_DIR$/../../../arrays/out/production/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../arrays/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../arrays/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../arrays/src/main/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../arrays/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
