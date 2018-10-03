@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="arrays_main" target="1.10" />
       <module name="arrays_test" target="1.10" />
+      <module name="thirtydays_main" target="1.10" />
+      <module name="thirtydays_test" target="1.10" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -8,4 +8,4 @@
  */
 
 rootProject.name = "hackerrank"
-include("arrays")
+include("arrays", "thirtydays")
