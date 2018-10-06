@@ -9,6 +9,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hashmaps/hashmaps.iml" filepath="$PROJECT_DIR$/.idea/modules/hashmaps/hashmaps.iml" group="hashmaps" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hashmaps/hashmaps_main.iml" filepath="$PROJECT_DIR$/.idea/modules/hashmaps/hashmaps_main.iml" group="hashmaps" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hashmaps/hashmaps_test.iml" filepath="$PROJECT_DIR$/.idea/modules/hashmaps/hashmaps_test.iml" group="hashmaps" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sorting/sorting.iml" filepath="$PROJECT_DIR$/.idea/modules/sorting/sorting.iml" group="sorting" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sorting/sorting_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sorting/sorting_main.iml" group="sorting" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sorting/sorting_test.iml" filepath="$PROJECT_DIR$/.idea/modules/sorting/sorting_test.iml" group="sorting" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/thirtydays/thirtydays.iml" filepath="$PROJECT_DIR$/.idea/modules/thirtydays/thirtydays.iml" group="thirtydays" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/thirtydays/thirtydays_main.iml" filepath="$PROJECT_DIR$/.idea/modules/thirtydays/thirtydays_main.iml" group="thirtydays" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/thirtydays/thirtydays_test.iml" filepath="$PROJECT_DIR$/.idea/modules/thirtydays/thirtydays_test.iml" group="thirtydays" />

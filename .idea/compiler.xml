@@ -6,6 +6,8 @@
       <module name="arrays_test" target="1.10" />
       <module name="hashmaps_main" target="1.10" />
       <module name="hashmaps_test" target="1.10" />
+      <module name="sorting_main" target="1.10" />
+      <module name="sorting_test" target="1.10" />
       <module name="thirtydays_main" target="1.10" />
       <module name="thirtydays_test" target="1.10" />
     </bytecodeTargetLevel>
