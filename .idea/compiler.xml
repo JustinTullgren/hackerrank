@@ -8,6 +8,8 @@
       <module name="hashmaps_test" target="1.10" />
       <module name="sorting_main" target="1.10" />
       <module name="sorting_test" target="1.10" />
+      <module name="strings_main" target="1.10" />
+      <module name="strings_test" target="1.10" />
       <module name="thirtydays_main" target="1.10" />
       <module name="thirtydays_test" target="1.10" />
     </bytecodeTargetLevel>
