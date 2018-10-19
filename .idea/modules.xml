@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/arrays/arrays.iml" filepath="$PROJECT_DIR$/.idea/modules/arrays/arrays.iml" group="arrays" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/arrays/arrays_main.iml" filepath="$PROJECT_DIR$/.idea/modules/arrays/arrays_main.iml" group="arrays" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/arrays/arrays_test.iml" filepath="$PROJECT_DIR$/.idea/modules/arrays/arrays_test.iml" group="arrays" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dynamicprogramming/dynamicprogramming.iml" filepath="$PROJECT_DIR$/.idea/modules/dynamicprogramming/dynamicprogramming.iml" group="dynamicprogramming" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dynamicprogramming/dynamicprogramming_main.iml" filepath="$PROJECT_DIR$/.idea/modules/dynamicprogramming/dynamicprogramming_main.iml" group="dynamicprogramming" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dynamicprogramming/dynamicprogramming_test.iml" filepath="$PROJECT_DIR$/.idea/modules/dynamicprogramming/dynamicprogramming_test.iml" group="dynamicprogramming" />
       <module fileurl="file://$PROJECT_DIR$/hackerrank.iml" filepath="$PROJECT_DIR$/hackerrank.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hashmaps/hashmaps.iml" filepath="$PROJECT_DIR$/.idea/modules/hashmaps/hashmaps.iml" group="hashmaps" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hashmaps/hashmaps_main.iml" filepath="$PROJECT_DIR$/.idea/modules/hashmaps/hashmaps_main.iml" group="hashmaps" />
