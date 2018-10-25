@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="arrays_main" target="1.10" />
       <module name="arrays_test" target="1.10" />
+      <module name="datastructures_main" target="1.10" />
+      <module name="datastructures_test" target="1.10" />
       <module name="dynamicprogramming_main" target="1.10" />
       <module name="dynamicprogramming_test" target="1.10" />
       <module name="greedyalgorithms_main" target="1.10" />
