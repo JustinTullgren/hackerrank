@@ -2,22 +2,22 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="arrays_main" target="1.10" />
-      <module name="arrays_test" target="1.10" />
-      <module name="datastructures_main" target="1.10" />
-      <module name="datastructures_test" target="1.10" />
-      <module name="dynamicprogramming_main" target="1.10" />
-      <module name="dynamicprogramming_test" target="1.10" />
-      <module name="greedyalgorithms_main" target="1.10" />
-      <module name="greedyalgorithms_test" target="1.10" />
-      <module name="hashmaps_main" target="1.10" />
-      <module name="hashmaps_test" target="1.10" />
-      <module name="sorting_main" target="1.10" />
-      <module name="sorting_test" target="1.10" />
-      <module name="strings_main" target="1.10" />
-      <module name="strings_test" target="1.10" />
-      <module name="thirtydays_main" target="1.10" />
-      <module name="thirtydays_test" target="1.10" />
+      <module name="arrays_main" target="1.8" />
+      <module name="arrays_test" target="1.8" />
+      <module name="datastructures_main" target="1.8" />
+      <module name="datastructures_test" target="1.8" />
+      <module name="dynamicprogramming_main" target="1.8" />
+      <module name="dynamicprogramming_test" target="1.8" />
+      <module name="greedyalgorithms_main" target="1.8" />
+      <module name="greedyalgorithms_test" target="1.8" />
+      <module name="hashmaps_main" target="1.8" />
+      <module name="hashmaps_test" target="1.8" />
+      <module name="sorting_main" target="1.8" />
+      <module name="sorting_test" target="1.8" />
+      <module name="strings_main" target="1.8" />
+      <module name="strings_test" target="1.8" />
+      <module name="thirtydays_main" target="1.8" />
+      <module name="thirtydays_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
