@@ -1,4 +1,4 @@
-package com.justintullgren.hackerrank.datastructures;
+package com.justintullgren.hackerrank.datastructures.tree;
 
 import org.jetbrains.annotations.NotNull;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
@@ -11,12 +11,11 @@ import java.util.function.Consumer;
 public class InOrderBinaryTree implements Iterable<Integer> {
     private BinaryNode root;
 
-    public BinaryNode add(int value) {
+    public void add(int value) {
         root = add(root, value);
-        return root;
     }
 
-    BinaryNode getRoot() {
+    public BinaryNode getRoot() {
         return root;
     }
 
@@ -28,7 +27,9 @@ public class InOrderBinaryTree implements Iterable<Integer> {
 
     @Override
     public void forEach(Consumer<? super Integer> action) {
-
+        for (Integer integer : this) {
+            action.accept(integer);
+        }
     }
 
     @Override
@@ -39,38 +40,14 @@ public class InOrderBinaryTree implements Iterable<Integer> {
     private BinaryNode add(BinaryNode root, int value) {
         if (root == null) {
             return new BinaryNode(value);
-        } else if (value < root.value) {
-            root.left = add(root.left, value);
+        } else if (value < root.getValue()) {
+            root.setLeft(add(root.getLeft(), value));
         } else {
-            root.right = add(root.right, value);
+            root.setRight(add(root.getRight(), value));
         }
         return root;
     }
 
-
-    class BinaryNode {
-        private BinaryNode left;
-        private BinaryNode right;
-
-        private int value;
-
-        BinaryNode(int value) {
-            this.value = value;
-            left = right = null;
-        }
-
-        BinaryNode getLeft() {
-            return left;
-        }
-
-        BinaryNode getRight() {
-            return right;
-        }
-
-        int getValue() {
-            return value;
-        }
-    }
 
     private class InOrderIterator implements Iterator<Integer> {
         private Stack<BinaryNode> stack;
@@ -79,7 +56,7 @@ public class InOrderBinaryTree implements Iterable<Integer> {
             stack = new Stack<>();
             while (root != null) {
                 stack.push(root);
-                root = root.left;
+                root = root.getLeft();
             }
         }
 
@@ -91,12 +68,12 @@ public class InOrderBinaryTree implements Iterable<Integer> {
         @Override
         public Integer next() {
             BinaryNode node = stack.pop();
-            Integer result = node.value;
-            if (node.right != null) {
-                node = node.right;
+            Integer result = node.getValue();
+            if (node.getRight() != null) {
+                node = node.getRight();
                 while (node != null) {
                     stack.push(node);
-                    node = node.left;
+                    node = node.getLeft();
                 }
             }
             return result;

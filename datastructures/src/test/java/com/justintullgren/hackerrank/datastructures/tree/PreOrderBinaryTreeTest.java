@@ -1,4 +1,4 @@
-package com.justintullgren.hackerrank.datastructures;
+package com.justintullgren.hackerrank.datastructures.tree;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -8,13 +8,13 @@ import java.util.Iterator;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-public class InOrderBinaryTreeTest {
+public class PreOrderBinaryTreeTest {
 
-    private InOrderBinaryTree subject;
+    private PreOrderBinaryTree subject;
 
     @Before
     public void before() {
-        subject = new InOrderBinaryTree();
+        subject = new PreOrderBinaryTree();
         subject.add(7);
         subject.add(6);
         subject.add(8);
@@ -23,11 +23,11 @@ public class InOrderBinaryTreeTest {
 
     @Test
     public void testAdd() {
-        InOrderBinaryTree.BinaryNode root = subject.getRoot();
-        InOrderBinaryTree.BinaryNode currentNode = root;
+        BinaryNode root = subject.getRoot();
+        BinaryNode currentNode = root;
 
-        InOrderBinaryTree.BinaryNode left = currentNode.getLeft();
-        InOrderBinaryTree.BinaryNode right = currentNode.getRight();
+        BinaryNode left = currentNode.getLeft();
+        BinaryNode right = currentNode.getRight();
 
         assertThat(currentNode.getValue()).isEqualTo(7);
         assertThat(left.getValue()).isEqualTo(6);
@@ -42,9 +42,9 @@ public class InOrderBinaryTreeTest {
     }
 
     @Test
-    public void testInOrderIterator() {
+    public void testPreOrderIterator() {
         Iterator<Integer> iterator = subject.iterator();
-        int[] expectedOrder = {5, 6, 7, 8};
+        int[] expectedOrder = {7, 6, 5, 8};
         int expectedIterationCount = expectedOrder.length;
         int index = 0;
         do {
