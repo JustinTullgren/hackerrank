@@ -4,9 +4,8 @@ import org.jetbrains.annotations.NotNull;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Spliterator;
+import java.util.Stack;
 import java.util.function.Consumer;
 
 public class PreOrderBinaryTree implements Iterable<Integer> {
@@ -50,33 +49,31 @@ public class PreOrderBinaryTree implements Iterable<Integer> {
     }
 
     private class PreOrderIterator implements Iterator<Integer> {
-        private Queue<BinaryNode> queue;
+        private Stack<BinaryNode> stack;
 
         PreOrderIterator(BinaryNode root) {
-            queue = new LinkedList<>();
-            while (root != null) {
-                queue.add(root);
-                root = root.getLeft();
+            stack = new Stack<>();
+            if (root != null) {
+                stack.push(root);
             }
         }
 
         @Override
         public boolean hasNext() {
-            return !queue.isEmpty();
+            return !stack.isEmpty();
         }
 
         @Override
         public Integer next() {
-            BinaryNode node = queue.remove();
-            Integer result = node.getValue();
+            BinaryNode node = stack.pop();
+            Integer value = node.getValue();
             if (node.getRight() != null) {
-                node = node.getRight();
-                while (node != null) {
-                    queue.add(node);
-                    node = node.getLeft();
-                }
+                stack.push(node.getRight());
             }
-            return result;
+            if (node.getLeft() != null) {
+                stack.push(node.getLeft());
+            }
+            return value;
         }
     }
 }
