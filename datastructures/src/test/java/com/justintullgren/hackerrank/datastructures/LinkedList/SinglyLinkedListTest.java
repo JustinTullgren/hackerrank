@@ -87,9 +87,33 @@ public class SinglyLinkedListTest {
         subject.add(60);
         subject.add(70);
 
+        assertThat(subject.get(0)).isEqualTo(0);
         assertThat(subject.get(1)).isEqualTo(1);
         assertThat(subject.get(2)).isEqualTo(2);
         assertThat(subject.get(3)).isEqualTo(20);
         assertThat(subject.get(100)).isEqualTo(null);
+    }
+
+    @Test
+    public void testRemoveDuplicates() {
+        subject.add(5);
+        subject.add(5);
+        subject.add(1);
+        subject.add(2);
+        subject.add(4);
+        subject.add(3);
+        subject.add(2);
+        subject.add(1);
+
+        subject.removeDuplicates();
+
+        assertThat(subject.get(0)).isEqualTo(5);
+        assertThat(subject.get(1)).isEqualTo(1);
+        assertThat(subject.get(2)).isEqualTo(2);
+        assertThat(subject.get(3)).isEqualTo(4);
+        assertThat(subject.get(4)).isEqualTo(3);
+        assertThat(subject.size()).isEqualTo(5);
+
+
     }
 }

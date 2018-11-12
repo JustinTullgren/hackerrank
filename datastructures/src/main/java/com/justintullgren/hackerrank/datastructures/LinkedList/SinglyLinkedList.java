@@ -1,5 +1,7 @@
 package com.justintullgren.hackerrank.datastructures.LinkedList;
 
+import java.util.HashSet;
+
 public class SinglyLinkedList<T> {
 
     private Node<T> last;
@@ -82,6 +84,25 @@ public class SinglyLinkedList<T> {
             node = node.next;
         }
         return sb.toString();
+    }
+
+    public void removeDuplicates() {
+        HashSet<T> seen = new HashSet<>();
+        seen.add(head.value);
+        removeDuplicates(head, head.next, seen);
+    }
+
+    private void removeDuplicates(Node<T> last, Node<T> node, HashSet<T> seen) {
+        if (last == null || node == null) {
+            return;
+        }
+        if (!seen.add(node.value)) {
+            last.next = node.next;
+            size--;
+            removeDuplicates(last, last.next, seen);
+        } else {
+            removeDuplicates(node, node.next, seen);
+        }
     }
 
     static class Node<V> {
