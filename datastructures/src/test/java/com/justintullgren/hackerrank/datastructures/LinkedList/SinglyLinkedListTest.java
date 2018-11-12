@@ -95,7 +95,7 @@ public class SinglyLinkedListTest {
     }
 
     @Test
-    public void testRemoveDuplicates() {
+    public void testRemoveDuplicatesRecursive() {
         subject.add(5);
         subject.add(5);
         subject.add(1);
@@ -105,7 +105,7 @@ public class SinglyLinkedListTest {
         subject.add(2);
         subject.add(1);
 
-        subject.removeDuplicates();
+        subject.removeDuplicatesRecursive();
 
         assertThat(subject.get(0)).isEqualTo(5);
         assertThat(subject.get(1)).isEqualTo(1);
@@ -113,7 +113,26 @@ public class SinglyLinkedListTest {
         assertThat(subject.get(3)).isEqualTo(4);
         assertThat(subject.get(4)).isEqualTo(3);
         assertThat(subject.size()).isEqualTo(5);
+    }
 
+    @Test
+    public void testRemoveDuplicatesIteration() {
+        subject.add(5);
+        subject.add(5);
+        subject.add(1);
+        subject.add(2);
+        subject.add(4);
+        subject.add(3);
+        subject.add(2);
+        subject.add(1);
 
+        subject.removeDuplicatesIteration();
+
+        assertThat(subject.get(0)).isEqualTo(5);
+        assertThat(subject.get(1)).isEqualTo(1);
+        assertThat(subject.get(2)).isEqualTo(2);
+        assertThat(subject.get(3)).isEqualTo(4);
+        assertThat(subject.get(4)).isEqualTo(3);
+        assertThat(subject.size()).isEqualTo(5);
     }
 }

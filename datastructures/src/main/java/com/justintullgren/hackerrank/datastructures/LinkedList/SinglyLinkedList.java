@@ -86,22 +86,38 @@ public class SinglyLinkedList<T> {
         return sb.toString();
     }
 
-    public void removeDuplicates() {
+    public void removeDuplicatesRecursive() {
         HashSet<T> seen = new HashSet<>();
         seen.add(head.value);
-        removeDuplicates(head, head.next, seen);
+        removeDuplicatesRecursive(head, head.next, seen);
     }
 
-    private void removeDuplicates(Node<T> last, Node<T> node, HashSet<T> seen) {
+    private void removeDuplicatesRecursive(Node<T> last, Node<T> node, HashSet<T> seen) {
         if (last == null || node == null) {
             return;
         }
         if (!seen.add(node.value)) {
             last.next = node.next;
             size--;
-            removeDuplicates(last, last.next, seen);
+            removeDuplicatesRecursive(last, last.next, seen);
         } else {
-            removeDuplicates(node, node.next, seen);
+            removeDuplicatesRecursive(node, node.next, seen);
+        }
+    }
+
+    public void removeDuplicatesIteration() {
+        Node<T> current = head;
+        while (current != null) {
+            Node<T> runner = current;
+            while (runner.next != null) {
+                if (current.value == runner.next.value) {
+                    runner.next = runner.next.next;
+                    size--;
+                } else {
+                    runner = runner.next;
+                }
+            }
+            current = current.next;
         }
     }
 
