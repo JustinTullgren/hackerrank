@@ -121,24 +121,43 @@ public class SinglyLinkedList<T> {
         }
     }
 
-    public T getKthToLast(int numberUntilLast) {
+    public T getKthToLastRecursive(int numberUntilLast) {
         if (head == null) {
             return null;
         }
-        return getKthToLast(head, head, numberUntilLast, 0);
+        return getKthToLastRecursive(head, head, numberUntilLast, 0);
     }
 
-    private T getKthToLast(Node<T> root, Node<T> kth, int numberUntilLast, int distance) {
+    private T getKthToLastRecursive(Node<T> root, Node<T> kth, int numberUntilLast, int distance) {
         // at end
         if (root.next == null && distance == numberUntilLast) {
             return kth.value;
         } else if (root.next == null) {
             throw new IllegalStateException("Invalid Distance");
         } else if (distance != numberUntilLast) {
-            return getKthToLast(root.next, kth, numberUntilLast, distance + 1);
+            return getKthToLastRecursive(root.next, kth, numberUntilLast, distance + 1);
         } else {
-            return getKthToLast(root.next, kth.next, numberUntilLast, distance);
+            return getKthToLastRecursive(root.next, kth.next, numberUntilLast, distance);
         }
+    }
+
+    public T getKthToLastIterative(int numberUntilLast) {
+        Node<T> current = head;
+        int distance = 0;
+        Node<T> kth = head;
+        while (current != null) {
+            if (current.next == null && distance != numberUntilLast) {
+                throw new IllegalStateException("Invalid Distance");
+            } else if (current.next == null) {
+                return kth.value;
+            } else if (distance == numberUntilLast) {
+                kth = kth.next;
+            }
+
+            current = current.next;
+        }
+
+        return null;
     }
 
 

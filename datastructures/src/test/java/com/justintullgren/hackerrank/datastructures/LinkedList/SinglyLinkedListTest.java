@@ -137,7 +137,7 @@ public class SinglyLinkedListTest {
     }
 
     @Test(expected = IllegalStateException.class)
-    public void testReturnKthToLast() {
+    public void testReturnKthToLastRecursive() {
         subject.add(1);
         subject.add(2);
         subject.add(3);
@@ -147,13 +147,34 @@ public class SinglyLinkedListTest {
         subject.add(7);
         subject.add(8);
 
-        int value = subject.getKthToLast(7);
+        int value = subject.getKthToLastRecursive(7);
         assertThat(value).isEqualTo(1);
 
-        value = subject.getKthToLast(1);
+        value = subject.getKthToLastRecursive(1);
         assertThat(value).isEqualTo(7);
 
         // throw
-        value = subject.getKthToLast(10);
+        value = subject.getKthToLastRecursive(10);
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void testReturnKthToLastIterative() {
+        subject.add(1);
+        subject.add(2);
+        subject.add(3);
+        subject.add(4);
+        subject.add(5);
+        subject.add(6);
+        subject.add(7);
+        subject.add(8);
+
+        int value = subject.getKthToLastIterative(7);
+        assertThat(value).isEqualTo(1);
+
+        value = subject.getKthToLastRecursive(1);
+        assertThat(value).isEqualTo(7);
+
+        // throw
+        value = subject.getKthToLastRecursive(10);
     }
 }
