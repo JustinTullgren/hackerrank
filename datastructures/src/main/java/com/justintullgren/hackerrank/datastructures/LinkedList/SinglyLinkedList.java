@@ -121,6 +121,27 @@ public class SinglyLinkedList<T> {
         }
     }
 
+    public T getKthToLast(int numberUntilLast) {
+        if (head == null) {
+            return null;
+        }
+        return getKthToLast(head, head, numberUntilLast, 0);
+    }
+
+    private T getKthToLast(Node<T> root, Node<T> kth, int numberUntilLast, int distance) {
+        // at end
+        if (root.next == null && distance == numberUntilLast) {
+            return kth.value;
+        } else if (root.next == null) {
+            throw new IllegalStateException("Invalid Distance");
+        } else if (distance != numberUntilLast) {
+            return getKthToLast(root.next, kth, numberUntilLast, distance + 1);
+        } else {
+            return getKthToLast(root.next, kth.next, numberUntilLast, distance);
+        }
+    }
+
+
     static class Node<V> {
         Node<V> next;
         V value;

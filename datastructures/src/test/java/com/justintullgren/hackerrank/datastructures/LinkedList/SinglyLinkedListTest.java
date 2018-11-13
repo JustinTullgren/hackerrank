@@ -135,4 +135,25 @@ public class SinglyLinkedListTest {
         assertThat(subject.get(4)).isEqualTo(3);
         assertThat(subject.size()).isEqualTo(5);
     }
+
+    @Test(expected = IllegalStateException.class)
+    public void testReturnKthToLast() {
+        subject.add(1);
+        subject.add(2);
+        subject.add(3);
+        subject.add(4);
+        subject.add(5);
+        subject.add(6);
+        subject.add(7);
+        subject.add(8);
+
+        int value = subject.getKthToLast(7);
+        assertThat(value).isEqualTo(1);
+
+        value = subject.getKthToLast(1);
+        assertThat(value).isEqualTo(7);
+
+        // throw
+        value = subject.getKthToLast(10);
+    }
 }
