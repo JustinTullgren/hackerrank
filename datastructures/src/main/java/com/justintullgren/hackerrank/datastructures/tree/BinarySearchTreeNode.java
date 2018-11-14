@@ -22,6 +22,20 @@ public class BinarySearchTreeNode<T extends Comparable<T>> {
         return root;
     }
 
+    public static <D extends Comparable<D>> BinarySearchTreeNode<D> createFromSortedAlt(D[] sorted) {
+        return createFromSortedAlt(sorted, 0, sorted.length - 1);
+    }
+
+    private static <D extends Comparable<D>> BinarySearchTreeNode<D> createFromSortedAlt(D[] sorted, int start, int end) {
+        int midpoint = (start + end) / 2;
+        D rootValue = sorted[midpoint];
+        BinarySearchTreeNode<D> root = new BinarySearchTreeNode<>(rootValue);
+
+        root.left = createFromSortedAlt(sorted, start, midpoint - 1);
+        root.right = createFromSortedAlt(sorted, midpoint + 1, end);
+        return root;
+    }
+
     public T getValue() {
         return value;
     }

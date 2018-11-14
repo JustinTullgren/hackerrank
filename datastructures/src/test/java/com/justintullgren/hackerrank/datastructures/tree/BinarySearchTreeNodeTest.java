@@ -52,5 +52,11 @@ public class BinarySearchTreeNodeTest {
         assertThat(root).isNotNull();
         assertThat(root.getValue()).isEqualTo(10);
         assertThat(root.toString()).isEqualTo("{ 8 }{ 9 }{ 10 }{ 11 }{ 12 }");
+
+        root = BinarySearchTreeNode.createFromSortedAlt(sorted);
+
+        assertThat(root).isNotNull();
+        assertThat(root.getValue()).isEqualTo(10);
+        assertThat(root.toString()).isEqualTo("{ 8 }{ 9 }{ 10 }{ 11 }{ 12 }");
     }
 }
