@@ -1,4 +1,4 @@
-package com.justintullgren.hackerrank.arrays;
+package com.justintullgren.hackerrank.dailycodingproblem;
 
 
 import org.junit.Test;
