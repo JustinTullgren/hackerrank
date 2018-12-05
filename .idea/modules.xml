@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/arrays/arrays.iml" filepath="$PROJECT_DIR$/.idea/modules/arrays/arrays.iml" group="arrays" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/arrays/arrays_main.iml" filepath="$PROJECT_DIR$/.idea/modules/arrays/arrays_main.iml" group="arrays" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/arrays/arrays_test.iml" filepath="$PROJECT_DIR$/.idea/modules/arrays/arrays_test.iml" group="arrays" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/crackingthecodinginterview/crackingthecodinginterview.iml" filepath="$PROJECT_DIR$/.idea/modules/crackingthecodinginterview/crackingthecodinginterview.iml" group="crackingthecodinginterview" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/crackingthecodinginterview/crackingthecodinginterview_main.iml" filepath="$PROJECT_DIR$/.idea/modules/crackingthecodinginterview/crackingthecodinginterview_main.iml" group="crackingthecodinginterview" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/crackingthecodinginterview/crackingthecodinginterview_test.iml" filepath="$PROJECT_DIR$/.idea/modules/crackingthecodinginterview/crackingthecodinginterview_test.iml" group="crackingthecodinginterview" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/dailycodingproblem/dailycodingproblem.iml" filepath="$PROJECT_DIR$/.idea/modules/dailycodingproblem/dailycodingproblem.iml" group="dailycodingproblem" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/dailycodingproblem/dailycodingproblem_main.iml" filepath="$PROJECT_DIR$/.idea/modules/dailycodingproblem/dailycodingproblem_main.iml" group="dailycodingproblem" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/dailycodingproblem/dailycodingproblem_test.iml" filepath="$PROJECT_DIR$/.idea/modules/dailycodingproblem/dailycodingproblem_test.iml" group="dailycodingproblem" />
