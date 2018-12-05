@@ -1,4 +1,4 @@
-package com.justintullgren.hackerrank.crackingthecodinginterview;
+package com.justintullgren.hackerrank.crackingthecodinginterview.chaptersixteen;
 
 /**
  * Chapter 16
