@@ -2,6 +2,7 @@ package com.justintullgren.hackerrank.datastructures;
 
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 /**
@@ -52,5 +53,25 @@ public class JessesCookies {
             }
         }
         return ops;
+    }
+
+    public static int cookiesOptimized(int k, int[] cookies) {
+        int ops = 0;
+        PriorityQueue<Integer> queue = new PriorityQueue<>();
+        for (int i = 0; i < cookies.length; i++) {
+            queue.add(cookies[i]);
+        }
+        while (queue.size() > 1 && queue.peek() < k) {
+            int smallest = queue.poll();
+            int nextSmallest = queue.poll();
+
+            queue.add(smallest + (2 * nextSmallest));
+            ops++;
+        }
+        if (queue.peek() < k) {
+            return -1;
+        } else {
+            return ops;
+        }
     }
 }
